@@ -83,8 +83,7 @@
 
                     </div>
 
-                    <!-- validation automatically appears here -->
-
+                    
                 </div>
 
 
@@ -122,7 +121,7 @@
 
                     </div>
 
-                    <!-- validation automatically appears here -->
+                   
 
                 </div>
 
@@ -230,9 +229,6 @@
             let attempts = 4;
 
 
-            /* =========================================
-               PASSWORD SHOW / HIDE
-            ========================================= */
 
             $("#toggleLoginPassword").on("click", function () {
 
@@ -264,9 +260,6 @@
             });
 
 
-            /* =========================================
-               SHOW EYE WHEN PASSWORD IS REACHED
-            ========================================= */
 
             $("#loginPassword").on("focus", function () {
 
@@ -274,10 +267,6 @@
 
             });
 
-
-            /* =========================================
-               REMEMBER ME
-            ========================================= */
 
             const rememberedUsername =
                 localStorage.getItem("rememberedUsername");
@@ -291,9 +280,6 @@
             }
 
 
-            /* =========================================
-               CUSTOM PATTERN VALIDATION
-            ========================================= */
 
             $.validator.addMethod(
                 "pattern",
@@ -310,9 +296,6 @@
             );
 
 
-            /* =========================================
-               JQUERY VALIDATION
-            ========================================= */
 
             $("#loginForm").validate({
 
@@ -411,9 +394,6 @@
                 },
 
 
-                /* =========================================
-                   LOGIN
-                ========================================= */
 
                 submitHandler: function (form) {
 
@@ -581,9 +561,6 @@
             });
 
 
-            /* =========================================
-               USERNAME ENTER
-            ========================================= */
 
             $("#username").on("keydown", function (event) {
 
@@ -644,9 +621,6 @@
             });
 
 
-            /* =========================================
-               PASSWORD ENTER
-            ========================================= */
 
             $("#loginPassword").on("keydown", function (event) {
 
@@ -716,9 +690,6 @@
             });
 
 
-            /* =========================================
-               LOGIN MESSAGE
-            ========================================= */
 
             function showLoginMessage(message, type) {
 
@@ -740,10 +711,6 @@
 
             }
 
-
-            /* =========================================
-               FORGOT PASSWORD
-            ========================================= */
 
             $("#forgotPassword").on("click", function (event) {
 
